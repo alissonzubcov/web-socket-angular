@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let chat of webSocketService.chatMessages">
+    <strong>{{chat.user}}:</strong>
+    <span>{{chat.message}}</span>
+</li>
+</ul>
+
+<button (click)="sendMessage()">SEND</button>
